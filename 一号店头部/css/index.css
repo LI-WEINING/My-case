@@ -1,0 +1,675 @@
+@charset "UTF-8";
+/*头部样式*/
+header {
+  height: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #f4f4f4;
+  line-height: 30px;
+}
+
+header .icon {
+  color: #ff4040;
+  font-size: 16px;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: top;
+}
+
+header .place {
+  position: relative;
+  padding: 0 10px;
+}
+
+header .place a {
+  color: #666666;
+}
+
+header .place a:hover {
+  color: #ff4040;
+}
+
+header .place .place_menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 720px;
+  height: 405px;
+  background-color: white;
+  cursor: default;
+  color: #999999;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dbdbdb;
+  border-image: initial;
+  z-index: 9999;
+}
+
+header .place .place_menu .close_menu {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 20px;
+  font-family: Tahoma;
+  font-size: 20px;
+  color: #cccccc;
+  line-height: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+header .place .place_menu h4 {
+  float: left;
+  padding-right: 10px;
+  height: 20px;
+  line-height: 20px;
+  color: #666666;
+}
+
+header .place .place_menu .city_seach {
+  height: 30px;
+  padding: 15px 20px 0px;
+}
+
+header .place .place_menu .city_seach h4 {
+  height: 28px;
+  line-height: 28px;
+}
+
+header .place .place_menu .city_seach .city_seach_box {
+  position: relative;
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #ccc;
+}
+
+header .place .place_menu .city_seach .city_seach_box em {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 26px;
+  text-align: center;
+  color: #dcdcdc;
+  font-size: 16px;
+}
+
+header .place .place_menu .city_seach .city_seach_box input {
+  display: block;
+  width: 135px;
+  height: 26px;
+  padding: 0 8px 0 5px;
+  border: 0 none;
+  line-height: 26px;
+  color: #333;
+  font-size: 12px;
+  text-indent: 25px;
+}
+
+header .place .place_menu .hot_city {
+  padding: 12px 0 5px;
+  margin: 0 0 0 20px;
+  border-bottom: 1px dotted #e0e0e0;
+  overflow: hidden;
+  line-height: 20px;
+}
+
+header .place .place_menu .hot_city ul {
+  float: left;
+  width: 610px;
+}
+
+header .place .place_menu .hot_city ul li {
+  float: left;
+  padding: 0 25px 5px 0;
+  color: #666;
+}
+
+header .place .place_menu .hot_city ul li:hover {
+  color: #ff4040;
+}
+
+header .place .place_menu .city_letter {
+  margin: 0 20px;
+  padding: 12px 0 0;
+  overflow: hidden;
+}
+
+header .place .place_menu .city_letter .letter_list {
+  float: left;
+}
+
+header .place .place_menu .city_letter .letter_list a {
+  float: left;
+  width: 22px;
+  height: 20px;
+  margin: 0 5px 5px 0;
+  background-color: #eee;
+  color: gray;
+  text-align: center;
+  line-height: 20px;
+}
+
+header .place .place_menu .city_letter .letter_list a:hover {
+  background-color: #ff4040;
+  color: #fff;
+}
+
+header .place .place_menu .all_city_list {
+  position: relative;
+  height: 245px;
+  overflow: hidden;
+  margin: 0 0 10px 20px;
+}
+
+header .place .place_menu .all_city_list .city_list_wrap {
+  position: relative;
+  height: 215px;
+  padding: 10px 0;
+  overflow: auto;
+}
+
+header .place .place_menu .all_city_list .city_list_wrap .select_city {
+  overflow: hidden;
+}
+
+header .place .place_menu .all_city_list .city_list_wrap li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+header .place .place_menu .all_city_list .city_list_wrap li .letter_zm {
+  position: absolute;
+  z-index: 999;
+  left: 3px;
+  top: 2px;
+  font-size: 18px;
+  font-family: "Arial";
+  color: #ccc;
+}
+
+header .place .place_menu .all_city_list .city_list_wrap li .all_area a {
+  display: block;
+  float: left;
+  padding: 0 30px 0 0;
+  white-space: nowrap;
+  color: #666;
+}
+
+header .place .place_menu .all_city_list .city_list_wrap li .all_area a:hover {
+  color: #ff4040;
+}
+
+header .inform {
+  height: 30px;
+  padding-left: 20px;
+  color: #666;
+  width: 230px;
+  position: relative;
+}
+
+header .inform .ul_roll {
+  position: absolute;
+  top: 0;
+  left: 36px;
+  width: 206px;
+  height: 30px;
+  overflow: hidden;
+}
+
+header .inform ul li {
+  text-indent: 3px;
+  color: #333333;
+  cursor: pointer;
+}
+
+header .inform ul li:hover {
+  text-indent: 3px;
+  color: #ff4040;
+}
+
+header .mine .form_list {
+  color: #666666;
+}
+
+header .mine .form_list .hi {
+  cursor: text;
+}
+
+header .mine .form_list .login {
+  color: #ff4040;
+}
+
+header .mine .form_list .regist {
+  padding-left: 8px;
+  color: #aaa;
+}
+
+header .mine .form_list .regist:hover {
+  color: #ff4040;
+}
+
+header .mine .inc {
+  display: inline-block;
+  vertical-align: top;
+  color: #aaaaaa;
+}
+
+header .mine ul li {
+  float: left;
+  float: left;
+  min-width: 66px;
+  height: 30px;
+  padding: 0 7px;
+  color: #333333;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+}
+
+header .mine ul li span {
+  cursor: pointer;
+}
+
+header .mine ul li:hover {
+  color: #ff4040;
+}
+
+header .mine ul li:hover .inc {
+  color: #ff4040;
+}
+
+/*搜索栏*/
+#seek {
+  height: 180px;
+  background-color: #fff;
+}
+
+#seek .type-area {
+  position: relative;
+  height: 180px;
+}
+
+#seek .type-area .logo {
+  width: 300px;
+  height: 140px;
+  position: relative;
+}
+
+#seek .type-area .logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#seek .type-area .logo h1 {
+  width: 140px;
+  height: 140px;
+}
+
+#seek .type-area .logo h3 {
+  line-height: 140px;
+  width: 160px;
+  height: 90px;
+  position: absolute;
+  top: calc(50% - 45px);
+  right: 0;
+}
+
+#seek .type-area .seek_box {
+  width: 650px;
+  height: 67px;
+  padding-top: 50px;
+  position: relative;
+}
+
+#seek .type-area .seek_box .buy_box {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  /*搜索提示框*/
+}
+
+#seek .type-area .seek_box .buy_box form {
+  position: relative;
+  width: 508px;
+  height: 38px;
+  border-radius: 100px;
+  padding: 1px;
+  border: 1px solid #e2e2e2;
+  background: 0;
+}
+
+#seek .type-area .seek_box .buy_box form input {
+  position: relative;
+  width: 426px;
+  height: 38px;
+  padding: 0;
+  padding-left: 32px;
+  padding-right: 50px;
+  border: none;
+  background: 0;
+  outline: none;
+}
+
+#seek .type-area .seek_box .buy_box form .icon {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #666;
+  font-size: 24px;
+  line-height: 38px;
+  width: 50px;
+  height: 38px;
+  text-indent: 8px;
+}
+
+#seek .type-area .seek_box .buy_box form:hover {
+  border: 1px solid #ff4040;
+}
+
+#seek .type-area .seek_box .buy_box .gogog {
+  text-decoration: none;
+  width: 120px;
+  height: 20px;
+  padding: 9px 0 9px;
+  border: 1px solid #e2e2e2;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: #fff;
+  text-align: center;
+  line-height: 20px;
+  color: #333;
+  font-size: 16px;
+}
+
+#seek .type-area .seek_box .buy_box .gogog em {
+  margin-right: 6px;
+  font-size: 18px;
+  color: #272636;
+}
+
+#seek .type-area .seek_box .buy_box .commodity_list {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 20px;
+  padding: 5px 0;
+  z-index: 1001;
+  width: 430px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+  -moz-border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+#seek .type-area .seek_box .buy_box .commodity_list ul li {
+  display: block;
+  height: 28px;
+  border: 1px solid #fff;
+  border-right: 0 none;
+  color: #333;
+  font-size: 12px;
+  line-height: 30px;
+  padding-left: 12px;
+}
+
+#seek .type-area .seek_box .buy_box .commodity_list ul li:hover {
+  background: #f8f8f8;
+  border-color: #f0f0f0;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 42px;
+  left: 20px;
+  width: 430px;
+  z-index: 999;
+  overflow: hidden;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.08);
+  -moz-border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new .history_l {
+  float: left;
+  width: 225px;
+  height: 100%;
+  border-right: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new .history_l dl {
+  width: 225px;
+  border-right: 1px solid #e5e5e5;
+  background-color: #fff;
+  float: left;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new .history_l dl dt {
+  height: 16px;
+  padding: 11px 0 8px 12px;
+  color: #999;
+  line-height: 16px;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new .history_l dl dt a {
+  float: right;
+  color: #999;
+  padding-right: 12px;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new .history_l dl dt a:hover {
+  color: #ff4040;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new .history_l dl dt .icon {
+  font-size: 12px;
+  padding-right: 2px;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new .history_l dl dd {
+  display: block;
+  margin-inline-start: 40px;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new .history_r {
+  float: left;
+  width: 180px;
+  height: 100%;
+  padding: 0 12px 11px;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  border-left: 1px solid #e5e5e5;
+  margin-left: -1px;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new .history_r dt {
+  padding: 11px 6px 11px 0;
+  color: #666;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new .history_r dd {
+  cursor: pointer;
+  margin: 0 4px 5px 0;
+  float: left;
+  max-width: 150px;
+  height: 22px;
+  padding: 0 10px;
+  border: 1px solid #e1e1e1;
+  background: #FFF;
+  line-height: 22px;
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  text-indent: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+#seek .type-area .seek_box .buy_box .hd_search_history_new .history_r dd:hover {
+  border: 1px solid #ff4040;
+  color: #ff4040;
+}
+
+#seek .type-area .seek_box p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 19px;
+  padding-top: 8px;
+  padding-left: 32px;
+  overflow: hidden;
+}
+
+#seek .type-area .seek_box p a {
+  margin-right: 10px;
+  line-height: 19px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+#seek .type-area .seek_box p a:hover {
+  color: #333;
+}
+
+#seek .type-area .seek_more {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 38px;
+  font-size: 16px;
+  line-height: 38px;
+}
+
+#seek .type-area .seek_more .all {
+  position: relative;
+  width: 140px;
+  padding-top: 2px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  background-color: #ff4040;
+  cursor: pointer;
+}
+
+#seek .type-area .seek_more .all .icon-menu {
+  padding-right: 13px;
+}
+
+#seek .type-area .seek_more .all .iconUp {
+  display: none;
+  margin-left: 3px;
+}
+
+#seek .type-area .seek_more .all .iconDown {
+  margin-left: 3px;
+  display: inline;
+}
+
+#seek .type-area .seek_more .all .menu_list {
+  display: none;
+  color: #333333;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 1068px;
+  height: 410px;
+  background-color: #fff;
+  border: 1px solid #ff4040;
+  border-top: 2px solid #ff4040;
+  z-index: 1001;
+}
+
+#seek .type-area .seek_more .all .menu_list .content_list {
+  float: left;
+  width: 155px;
+  height: 350px;
+  padding-left: 22px;
+  margin: 30px 0;
+  border-right: 1px solid #e9e9e9;
+}
+
+#seek .type-area .seek_more .all .menu_list .content_list .con {
+  width: 155px;
+  height: 175px;
+  margin-bottom: 12px;
+}
+
+#seek .type-area .seek_more .all .menu_list .content_list p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 19px;
+  padding-bottom: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+#seek .type-area .seek_more .all .menu_list .content_list p a {
+  color: #333;
+}
+
+#seek .type-area .seek_more .all .menu_list .content_list p a:hover {
+  color: #ff4040;
+}
+
+#seek .type-area .seek_more .all .menu_list .content_list ul li {
+  text-align: left;
+  width: 50%;
+  color: #333;
+  font-size: 12px;
+  margin-left: 0;
+  line-height: 16px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  height: 16px;
+}
+
+#seek .type-area .seek_more .all .menu_list .content_list ul li:hover {
+  font-weight: bold;
+  color: #ff4040;
+}
+
+#seek .type-area .seek_more .all:hover .iconUp {
+  display: inline;
+}
+
+#seek .type-area .seek_more .all:hover .iconDown {
+  display: none;
+}
+
+#seek .type-area .seek_more .all:hover .menu_list {
+  display: block;
+}
+
+#seek .type-area .seek_more li {
+  float: left;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+#seek .type-area .seek_more li:hover {
+  color: #ff4040;
+}

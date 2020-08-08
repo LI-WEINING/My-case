@@ -1,0 +1,20 @@
+body{
+    font: 12px "Microsoft YaHei",Helvetica Neue,tahoma,Arial,Verdana,"Hiragino Sans GB","\5b8b\4f53";
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    min-width: 1070px;
+    background-color: #F5F5F5;
+}
+html,body,ul,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,form,fieldset,legend,table,ol,li,th,td,tr,colgroup,caption{margin: 0;padding: 0;}
+i,em{font-style: normal;}
+b,strong{font-weight: normal;}
+img{vertical-align: middle;}
+a{text-decoration: none;}
+li{list-style: none;}
+button{outline: none;}
+.float-l{float: left;}
+.float-r{float: right;}
+.no-wrap{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;} /* 文字溢出省略号 */
+.clear-all::before{content: '';display: block; overflow: hidden;clear: both; height: 0; visibility: hidden;}
+.clear-all{zoom: 1;}
+.type-area{width: 1070px; margin: 0 auto;}

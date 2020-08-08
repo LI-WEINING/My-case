@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1>代办任务列表</h1>
+        <div class="import">
+            <input type="text" id="title"><button id="btn">添加</button>
+        </div>
+        <div class="wait">
+            <p>
+                <input type="checkbox" name="sst"><span>任务一</span>
+                <b>删除</b>
+                <strong>编辑</strong>
+            </p>
+            <p>
+                <input type="checkbox" name="sst" ><span>任务二</span>
+                <b>删除</b>
+                <strong>编辑</strong>
+            </p>
+            <p>
+                <input type="checkbox" name="sst" ><span>任务三</span>
+                <b>删除</b>
+                <strong>编辑</strong>
+            </p>
+        </div>
+
+        <div class="operation">
+            <input type="checkbox" id="all_inp">
+            全部
+            <i>处理</i>
+            <em>删除</em>
+        </div>
+
+        <h1>已处理任务列表</h1>
+        <div class="finish">
+        </div>
+
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

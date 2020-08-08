@@ -1,0 +1,127 @@
+body,html{width: 100%;height: 100%;}
+body,p,h3,input,ul{margin: 0;padding: 0;}
+li{list-style: none;}
+@font-face
+{
+    font-family: numbClock;
+    src: url(../font/DIGITAL-Regular.ttf);
+}
+
+/* 计算机盒子样式 */
+#calclator{
+    width: 420px;
+    height: 600px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ddd;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: auto;
+    position: absolute;
+    user-select: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+/* 显示屏幕盒子样式 */
+.box{
+    width: 360px;
+    height: 85px;
+    padding: 5px;
+    box-sizing: border-box;
+    background: linear-gradient( #ccc,#fff);
+    background: -webkit-linear-gradient( #ccc,#fff);
+    background: -o-linear-gradient( #ccc,#fff);
+    background: -moz-linear-gradient( #ccc,#fff);
+    background: -mos-linear-gradient( #ccc,#fff);
+    background: linear-gradient( #ccc,#fff);
+    border-radius: 10px;
+}
+/* 数字内容盒子 */
+.numBox{
+    width: 350px;
+    height: 75px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 5px solid #000000;
+    box-sizing: border-box;
+    background-color: #d8d4c9;
+    font-size: 41px;
+    line-height: 41px;
+    overflow: hidden;
+    font-family: numbClock;
+    text-align: right;
+}
+/* 数字内容样式 */
+.numBox #myNumb{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-right: 10px;
+    box-sizing: border-box;
+    font-variant-numeric: tabular-nums;
+    font-style:italic
+}
+
+/* 输入按钮盒子网格的样式 */
+.btns{
+    width: 100%;
+    height: 430px;
+    margin-top: 25px;
+    background-color: #e4e4e4;
+    font-weight: bold;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    place-items:center center;
+    grid-template-areas:'a b c d'
+                        'e f g h'
+                        'i j k m'
+                        'n o p q'
+                        'r s t u'
+                        'v v w u';
+}
+.btns li{
+    cursor: pointer;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 23px;
+    color: #4a4a4a;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px #c5c5c5;
+    background-color: #f2f2f2;
+}
+.btns li:nth-of-type(5){
+    font-size: 19px;
+}
+.btns li:nth-of-type(1),.btns li:nth-of-type(2),.btns li:nth-of-type(3),.btns li:nth-of-type(4){
+    background: #3e3e3e;
+    color: #fff;
+}
+.btns li:nth-of-type(5),.btns li:nth-of-type(6),.btns li:nth-of-type(7),.btns li:nth-of-type(8),.btns li:nth-of-type(12),.btns li:nth-of-type(16){
+    color: #fff; 
+    background: linear-gradient(#8a8a8a,#6b6b6b);
+    background: -webkit-linear-gradient( #8a8a8a,#6b6b6b);
+    background: -o-linear-gradient( #8a8a8a,#6b6b6b);
+    background: -moz-linear-gradient( #8a8a8a,#6b6b6b);
+    background: -mos-linear-gradient( #8a8a8a,#6b6b6b);
+    background: linear-gradient( #8a8a8a,#6b6b6b);
+}
+.btns li:nth-of-type(21){
+    grid-area:v;
+    width: 170px;
+}
+.btns li:nth-of-type(20){
+    grid-area:u;
+    height: 91%;
+    line-height: 123px;
+    color: #fff;
+    background: linear-gradient( #fab454,#f99907);
+    background: -webkit-linear-gradient( #fab454,#f99907);
+    background: -o-linear-gradient( #fab454,#f99907);
+    background: -moz-linear-gradient( #fab454,#f99907);
+    background: -mos-linear-gradient( #fab454,#f99907);
+    background: linear-gradient( #fab454,#f99907);
+}

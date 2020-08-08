@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一号店</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+    <script src="./js/json.js"></script>
+    <script src="./js/utils.js" defer></script>
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+
+    <!-- 头部 -->
+    <header>
+        <div class="type-area clear-all">
+            <div class="place float-l">
+                <a href="#">
+                    <i class="icon iconfont"></i>
+                    <span>送货地址&nbsp;:</span>
+                    <em>深圳市</em>
+                </a>
+                <div class="place_menu">
+                    <b class="close_menu">×</b>
+                    <div class="city_seach">
+                        <h4>搜索城市：</h4>
+                        <div class="city_seach_box">
+                            <em class="icon iconfont"></em>
+                            <input type="text" placeholder="请输入城市名称">
+                        </div>
+                    </div>
+                    <div class="hot_city">
+                        <h4>热门城市：</h4>
+                        <ul>
+                            <li>上海市</li>
+                            <li>北京市</li>
+                            <li>广州市</li>
+                            <li>深圳市</li>
+                            <li>南京市</li>
+                            <li>杭州市</li>
+                            <li>武汉市</li>
+                            <li>成都市</li>
+                            <li>重庆市</li>
+                            <li>苏州市</li>
+                            <li>天津市</li>
+                            <li>合肥市</li>
+                            <li>温州市</li>
+                            <li>无锡市</li>
+                            <li>宁波市</li>
+                            <li>常州市</li>
+                        </ul>
+                    </div>
+                    <div class="city_letter">
+                        <h4>按字母查找</h4>
+                        <div class="letter_list">
+                            <a href="#">A</a>
+                            <a href="#">B</a>
+                            <a href="#">C</a>
+                            <a href="#">D</a>
+                            <a href="#">E</a>
+                            <a href="#">F</a>
+                            <a href="#">G</a>
+                            <a href="#">H</a>
+                            <a href="#">J</a>
+                            <a href="#">K</a>
+                            <a href="#">L</a>
+                            <a href="#">M</a>
+                            <a href="#">N</a>
+                            <a href="#">P</a>
+                            <a href="#">Q</a>
+                            <a href="#">R</a>
+                            <a href="#">S</a>
+                            <a href="#">T</a>
+                            <a href="#">W</a>
+                            <a href="#">X</a>
+                            <a href="#">Y</a>
+                            <a href="#">Z</a>
+                        </div>
+                    </div>
+                    <div class="all_city_list">
+                        <!-- 城市js文件写入 -->
+                        <div class="city_list_wrap"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="inform float-l">
+                <i class="icon iconfont"></i>
+                <div class="ul_roll">
+                    <ul class="clear-all ">
+                        <li>1号店PC及H5调整公告</li>
+                        <li>金币、优惠券下线公告</li>
+                        <li class="no-wrap">“礼品卡”“账户余额”业务调整公告</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mine float-r">
+                <ul>
+                    <li>
+                        <div class="form_list">
+                            <span class="hi">早上好,请</span>
+                            <a href="#" class="login">登录&nbsp;</a>
+                            <a href="#" class="regist">&nbsp;注册</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="inc iconfont"></i>
+                        <span>会员俱乐部</span>
+                    </li>
+                    <li>
+                        <i class="inc iconfont"></i>
+                        <span class="text">我的订单</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 搜索栏 -->
+    <div id="seek">
+        <div class="type-area">
+            <div class="logo float-l">
+                <h1 class="float-l">
+                    <img src="./img/logo_new@2x.png" alt="">
+                </h1>
+                <h3 class="float-l">
+                    <img src="./img/5c05314cNf894bdef.jpg" alt="">
+                </h3>
+            </div>
+            <div class="seek_box float-r">
+                <div class="buy_box">
+                    <form action="" class="float-l">
+                        <input type="text" placeholder="" value="">
+                        <i class="icon iconfont"></i>
+                    </form>
+                    <a href="#" class="float-r gogog">
+                        <em class="icon iconfont"></em>购物车
+                    </a>
+                    <!--搜索提示框-->
+                    <div class="commodity_list">
+                        <ul></ul>
+                    </div>
+                    <div class="hd_search_history_new">
+                        <div class="history_l">
+                            <dl>
+                                <dt>历史记录
+                                    <a href="#"><i class="icon iconfont"></i>清除</a>
+                                </dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                        <div class="history_r">
+                            <dt>热搜商品</dt>
+                            <dd>飞利浦</dd>
+                            <dd>哈根达斯</dd>
+                            <dd>蓝绘大宽面</dd>
+                            <dd>湾仔码头</dd>
+                            <dd>皇家</dd>
+                            <dd>glasslock</dd>
+                            <dd>气泡水</dd>
+                            <dd>曲奇夹心饼干</dd>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <a href="#">进口牛奶</a>
+                    <a href="#">飞利浦</a>
+                    <a href="#">吴大嫂</a> 
+                    <a href="#">美容仪</a> 
+                    <a href="#">周黑鸭</a> 
+                    <a href="#">湾仔码头</a> 
+                    <a href="#">李锦记</a>
+                    <a href="#">气泡水</a>
+                </p>
+            </div>
+            <div class="seek_more">
+                <div class="float-l all">
+                    <i class="icon icon-menu iconfont"></i>全部类目
+                    <i class="icon iconfont iconDown"></i>
+                    <i class="icon iconfont iconUp"></i>
+                    <div class="menu_list">
+                        <div class="content_list"></div>
+                        <div class="content_list"></div>
+                        <div class="content_list"></div>
+                        <div class="content_list"></div>
+                        <div class="content_list"></div>
+                        <div class="content_list"></div>
+                    </div>
+                </div>
+                <ul class="float-l">
+                    <li>金币签到</li>
+                    <li>充值</li>
+                    <li>领券中心</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 尾部(添入尾部模板-需要连接服务器) -->
+    <div id="footer"></div>
+    <script src="./js/jquery.js"></script>
+    <script>
+        $('#footer').load('./html/footerTemplate.html');
+    </script>
+
+</body>
+
+</html>

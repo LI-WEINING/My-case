@@ -1,0 +1,76 @@
+/* 公共样式 */
+body,input,p,h1,ul{margin: 0;padding: 0;}
+a{text-decoration: none;}
+em,i{font-style: normal; margin-left: 45px;}
+li{list-style: none; float: left;}
+strong,b{font-weight: normal; color: #de0925;}
+
+
+/* 内容样式 */
+#wrap{
+    width: 704px;
+    overflow: hidden;
+    margin: 100px auto;
+    padding: 6px 20px 11px;
+    background-color: #eeeeee;
+}
+#wrap h1{
+    font-size: 30px;
+    line-height: 77px;
+    text-align: center;
+}
+#wrap .import{
+    overflow: hidden;
+}
+#wrap #title{
+    width: 616px;
+    height: 30px;
+    float: left;
+    text-indent: 10px;
+}
+#wrap #btn{
+    float: left;
+    width: 80px;
+    height: 34px;
+    margin-left: 4px;
+}
+#wrap .operation{
+    height: 63px;
+    padding-left: 10px;
+    margin: 0 10px 24px;
+    line-height: 63px;
+    color: #0f00b9;
+}
+#wrap p{
+    margin: 10px;
+    height: 38px;
+    padding: 0 35px 0 15px;
+    background-color: #cccccc;
+    line-height: 38px;
+}
+#wrap p strong,#wrap p b{
+    display: none;
+    float: right;
+    margin-left: 10px;
+}
+
+#wrap p:hover strong{
+    display: block;
+}
+
+#wrap p:hover b{
+    display: block;
+}
+#wrap span{
+    margin-left: 7px;
+}
+#wrap .sr{
+    line-height: 38px;
+    width: 444px;
+    height: 18px;
+    line-height: 38px;
+    margin-left: 5px;
+}
+#wrap .finish p{
+    color: #9a9a9a;
+}
